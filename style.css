@@ -9,6 +9,8 @@ ul{
     list-style-type: none;
 }
 
+/* start container named header */
+
 header{
     display: flex;
     flex-direction: column;
@@ -17,6 +19,9 @@ header{
     height: 500px;
 }
 
+
+/* ------- */
+/* start nav */
 .top{
     display: flex;
     justify-content: space-around;
@@ -62,9 +67,11 @@ ul li{
     width: 100px;
     background-color: white;  
 }
+/* finish nav */
+/* -------- */
 
 
-.principale{
+.principal{
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -83,6 +90,7 @@ ul li{
 #title{
     border: 1px solid black;
     width: 35%;
+    height: 20%;
 }
 
 #button{
@@ -101,7 +109,12 @@ ul li{
     width: 40%;
     border-style: none;
 }
+/* finish container named header */
 
+
+
+
+/* start container named main */
 main{
     display: flex;
     flex-direction: column;
@@ -111,29 +124,37 @@ main{
     align-items: center;
 }
 
+/* used "flex grow 1" for all divs except the last div with "grow 2"*/
+
 main>div{
-    /* height: calc(100%/4); */
     flex-grow: 1;
     width: 85%;
     border: 1px solid red;
 }
 
 
-
-.primo{
+/* create a box for main content */
+.block{
     display: flex;
     gap: 40px;
     justify-content: space-between;
     align-items: center;
 }
 
+/*block with second class named "invert" switch img and text position */
+.invert{
+    flex-direction: row-reverse;
+}
 
-.primo .img{
+
+/* start management content block */
+.block .img{
     border: 1px solid black;
     width: 45%;
     height: 75%;
     background-color: gray
 }
+
 
 .section1{
     border: 1px solid black;
@@ -157,19 +178,17 @@ main>div{
     height: calc(100%/2);
     background-color: lightblue
 }
+/* end management block */
 
 
-.invert{
-    flex-direction: row-reverse;
-}
-
-
+/* last block != row */
+/* start management last block container in main */
+/* block with grow 2 */
 .lst{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* height: calc(100%/4); */
     flex-grow: 2;
     width: 85%;
     border: 1px solid red;
@@ -206,7 +225,7 @@ main>div{
 }
 
 
-#sotto{
+#lstfoot{
     border: 1px solid red;
     height: 18%;
     width: 30%;
@@ -216,24 +235,26 @@ main>div{
     justify-content: space-between;
 }
 
-#sotto span{
+#lstfoot span{
 height: calc(100%/2);
 width: 100%;
 background-color: lightblue
 }
 
 
-#sotto button{
+#lstfoot button{
     height: 30%;
     width: 50%;
     background-color: black;
     border-style: none;
 }
+/* end last block*/
+
+/* end container named main */
 
 
 
-
-
+/* start last container in html named footer */
 footer{
     width: 100%;
     height: 400px;
@@ -242,29 +263,19 @@ footer{
     justify-content: space-between;
     align-items: center;
     background-color: #23272A;
+    border: 1px solid yellow;
 }
 
+/* start "main" of the footer container */
 #final{
-    width: 85%;
-    height: 100%;
-    border: 1px solid red;
+    width: 80%;
+    height: 90%;
+    border: 1px solid rgb(255, 0, 242);
     display: flex;
     gap: 5%;
 }
 
-#deep{
-    display: flex;
-    width: 85%;
-    align-items: center;
-    height: 10%;
-    justify-content: space-between;
-    border-top: 1px solid white;
-}
-#deep figure, #deep button{
-    width: 5%;
-    height: 80%;
-    background-color: white;
-}
+/* start section for left information in main-footer */
 
 #text1{
     height: 50px;
@@ -299,7 +310,6 @@ a{
 #card2{
 margin-top: 5%;
 border: 1px red solid;
-height: 80%;
 width: 65%;
 display: flex;
 justify-content: space-between;
@@ -311,7 +321,10 @@ gap: 3%;
     width: 30%;
     background-color: green;
 }
+/* end section for left information in main-footer */
 
+
+/* start section for the ul */
 .list1{
     border: 1px blue solid;  
     height: 100%;
@@ -347,15 +360,38 @@ footer ul{
 footer li{
     border: 1px solid black;
     width: 75%;
-    height: 16px;
-    margin: 5px;
+    height: 18px;
+    margin: 2% 4%;
     background-color: white;
     
 }
 
-ul>h2{
+#card2>div>h2{
     width: 65%;
     height: 20px;
     background-color: lightblue;
-    margin: 5px;
+    margin: 7px;
+    margin-left: 4%;
 }
+/* end section ul */
+
+/* end "main" of the footer container */
+
+
+/*start footer for the footer container  */
+#deep{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    height: 10%;
+    justify-content: space-between;
+    border-top: 1px solid white;
+}
+#deep figure, #deep button{
+    width: 5%;
+    height: 80%;
+    background-color: white;
+}
+/*end footer for the footer container  */
+
+/* end footer container */
