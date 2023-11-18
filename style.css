@@ -8,7 +8,9 @@
 ul{
     list-style-type: none;
 }
-
+.grey{
+    background-color: #e4e2e2;
+}
 /* start container named header */
 
 header{
@@ -118,16 +120,23 @@ ul li{
 main{
     display: flex;
     flex-direction: column;
-    padding-inline: 30px;
     height: 2000px;
     border: 1px solid black;
     align-items: center;
+    width: 100%;
 }
 
 /* used "flex grow 1" for all divs except the last div with "grow 2"*/
 
 main>div{
+    display: flex;
+    justify-content: center;
     flex-grow: 1;
+    width: 100%;
+    border: 1px solid red;
+}
+
+main .block{
     width: 85%;
     border: 1px solid red;
 }
@@ -140,6 +149,8 @@ main>div{
     justify-content: space-between;
     align-items: center;
 }
+
+
 
 /*block with second class named "invert" switch img and text position */
 .invert{
@@ -181,6 +192,12 @@ main>div{
 /* end management block */
 
 
+.f2{
+    width: 100%;
+    flex-grow: 2;
+    border: 1px solid red;
+}
+
 /* last block != row */
 /* start management last block container in main */
 /* block with grow 2 */
@@ -189,7 +206,6 @@ main>div{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    flex-grow: 2;
     width: 85%;
     border: 1px solid red;
     
