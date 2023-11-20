@@ -80,7 +80,7 @@ ul li{
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 40px;
+    gap: 8%;
 }
 
 #text{
@@ -165,6 +165,8 @@ main .block{
     height: 75%;
     background-color: gray
 }
+
+
 
 
 .section1{
